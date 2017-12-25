@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-size: .24px;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: .8rem;
+    line-height: .8rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 .2rem;
+    color: white;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.section {
+    flex: 1;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.nav {
+    width: 100%;
+    height: 5.55rem;
+    background: url(../img/2.jpg);
+    background-size: 100% auto;
+}
+
+.inp {
+    width: 90%;
+    height: .8rem;
+    line-height: .8rem;
+    background: white;
+    border-radius: .8rem;
+    margin-left: 5%;
+    transition: all 1s linear;
+    transform: translateY(.8rem);
+    z-index: 9999;
+    text-align: center;
+    font-size: 0.3rem;
+}
+
+.nav .on {
+    transform: translateY(0) scaleX(.7) scaleY(.7);
+    position: fixed;
+    background: #eee;
+}
+
+.banner {
+    width: 100%;
+}
+
+.banner ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.banner ul li {
+    width: 20%;
+    height: 50%;
+    text-align: center;
+    padding: .3rem 0;
+}
+
+.banner ul li i {
+    display: block;
+    color: #fff;
+    font-size: .7rem;
+}
+
+.banner ul li a {
+    display: block;
+    color: #fff;
+}
+
+.pic {
+    animation: add 1s;
+}
+
+@keyframes add {
+    0% {
+        transform: translateX(0)
+    }
+    50% {
+        transform: translateX(50%)
+    }
+}
+
+.swiper-container1 {
+    overflow: hidden;
+    width: 100%;
+    height: 1.7rem;
+    background: #fff;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 .2rem;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 20%;
+}
+
+.swiper-slide p {
+    padding: 0 .2rem;
+}
+
+.swiper-slide p b {
+    font-weight: 400;
+    color: #999;
+    font-size: .3rem;
+}
+
+.swiper-slide p a {
+    color: #999;
+    font-size: .25rem;
+    display: block;
+}
+
+.love {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 6%;
+    font-size: .3rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.section .list {
+    width: 100%;
+    height: 150px;
+    border-bottom: 1px solid #ccc;
+}
+
+.section .list h5 {
+    padding: 0 10px;
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.section .list span {
+    padding: 8px 16px;
+    display: block;
+    display: flex;
+    width: 100%;
+    height: 100px;
+}
+
+.section .list img {
+    width: 30%;
+    height: 100px;
+}
